@@ -16,7 +16,7 @@ public class CharacterController : MonoBehaviour
     void Update()
     {
         // Get input for movement
-        float horizontalInput = -Input.GetAxis("Horizontal");
+        float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
         // Calculate movement direction based on input

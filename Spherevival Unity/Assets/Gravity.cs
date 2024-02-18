@@ -25,7 +25,7 @@ public class CustomGravity : MonoBehaviour
         rb.AddForce(gravity, ForceMode.Acceleration);
 
         // Rotate character to align with surface normal
-        RotateToAlignWithSurface(gravityDirection);
+        RotateToAlignWithSurface(-gravityDirection);
     }
 
     void RotateToAlignWithSurface(Vector3 surfaceNormal)
